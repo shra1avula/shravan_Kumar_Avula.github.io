@@ -6,114 +6,144 @@
 <title>Shravan Kumar Avula | Sr. Security Engineer</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--navy:#0a1628;--navy2:#0d1f3c;--navy3:#112240;--accent:#00c9ff;--accent2:#0077b6;--white:#e8f0fe;--muted:#8892b0;--card:#1a2744;--border:#1e3a5f;--green:#00e5a0;--orange:#ff9f1c;--purple:#b794f4}
+:root{--navy:#0a1628;--navy2:#0d1f3c;--accent:#00c9ff;--accent2:#0077b6;--white:#e8f0fe;--muted:#8892b0;--card:#1a2744;--border:#1e3a5f;--green:#00e5a0;--orange:#ff9f1c;--purple:#b794f4;--pink:#f687b3}
 html{scroll-behavior:smooth}
 body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--navy);color:var(--white);line-height:1.6}
 a{color:var(--accent);text-decoration:none}
 strong{color:var(--white);font-weight:600}
 
-nav{position:fixed;top:0;width:100%;background:rgba(10,22,40,0.96);backdrop-filter:blur(10px);z-index:100;padding:.8rem 2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border)}
-.nav-logo{font-size:1rem;font-weight:700;color:var(--accent);letter-spacing:2px}
-.nav-links{display:flex;gap:1.1rem;list-style:none}
-.nav-links a{color:var(--muted);font-size:.78rem;transition:color .2s;letter-spacing:.5px}
+nav{position:fixed;top:0;width:100%;background:rgba(10,22,40,0.97);backdrop-filter:blur(10px);z-index:100;padding:.7rem 1.5rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border)}
+.nav-logo{font-size:.95rem;font-weight:700;color:var(--accent);letter-spacing:2px;flex-shrink:0}
+.nav-links{display:flex;gap:.9rem;list-style:none;flex-wrap:wrap}
+.nav-links a{color:var(--muted);font-size:.72rem;transition:color .2s;letter-spacing:.3px}
 .nav-links a:hover{color:var(--accent)}
 
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:6rem 2rem 4rem;position:relative;overflow:hidden;background:var(--navy)}
 .hero-glow{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(0,201,255,.06) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
-.hero-badge{display:inline-block;padding:.35rem 1.2rem;border:1px solid var(--accent);border-radius:50px;color:var(--accent);font-size:.75rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.5rem}
-.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:700;line-height:1.15;margin-bottom:.5rem}
+.hero-badge{display:inline-block;padding:.35rem 1.2rem;border:1px solid var(--accent);border-radius:50px;color:var(--accent);font-size:.73rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:700;line-height:1.15;margin-bottom:.4rem}
 .hero h1 span{color:var(--accent)}
-.hero-title{font-size:clamp(.9rem,2vw,1.1rem);color:var(--muted);margin-bottom:.75rem}
-.sc-badge{display:inline-block;background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.3);color:var(--green);font-size:.78rem;padding:.2rem .8rem;border-radius:4px;margin-bottom:1.5rem;letter-spacing:.5px}
-.hero-desc{max-width:780px;margin:0 auto 2rem;color:#a8b2d8;font-size:.95rem;line-height:1.85}
-.hero-stats{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-bottom:2.5rem}
+.hero-title{font-size:clamp(.82rem,1.6vw,1rem);color:var(--muted);margin-bottom:.6rem;line-height:1.6}
+.sc-badge{display:inline-block;background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.3);color:var(--green);font-size:.75rem;padding:.18rem .75rem;border-radius:4px;margin-bottom:1.3rem;letter-spacing:.4px}
+.hero-desc{max-width:800px;margin:0 auto 1.8rem;color:#a8b2d8;font-size:.92rem;line-height:1.85}
+.hero-stats{display:flex;gap:1.8rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
 .stat{text-align:center}
-.stat-num{font-size:2rem;font-weight:700;color:var(--accent)}
-.stat-label{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
-.btn{display:inline-block;padding:.7rem 1.8rem;background:var(--accent);color:var(--navy);font-weight:700;border-radius:6px;font-size:.9rem;transition:transform .2s,opacity .2s;margin:.4rem}
+.stat-num{font-size:1.8rem;font-weight:700;color:var(--accent)}
+.stat-label{font-size:.66rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.btn{display:inline-block;padding:.65rem 1.6rem;background:var(--accent);color:var(--navy);font-weight:700;border-radius:6px;font-size:.86rem;transition:transform .2s,opacity .2s;margin:.35rem}
 .btn:hover{opacity:.88;transform:translateY(-2px);color:var(--navy)}
 .btn-outline{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
 .btn-outline:hover{background:rgba(0,201,255,.08);color:var(--accent)}
 
-section{padding:5rem 2rem}
+section{padding:4.5rem 2rem}
 .container{max-width:1100px;margin:0 auto}
-.section-label{font-size:.72rem;color:var(--accent);letter-spacing:3px;text-transform:uppercase;margin-bottom:.4rem}
-.section-title{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:700;margin-bottom:.5rem}
-.section-line{width:48px;height:3px;background:var(--accent);margin-bottom:2.5rem;border-radius:2px}
+.section-label{font-size:.7rem;color:var(--accent);letter-spacing:3px;text-transform:uppercase;margin-bottom:.35rem}
+.section-title{font-size:clamp(1.4rem,3vw,2rem);font-weight:700;margin-bottom:.45rem}
+.section-line{width:44px;height:3px;background:var(--accent);margin-bottom:2.2rem;border-radius:2px}
+.section-intro{color:#a8b2d8;font-size:.91rem;line-height:1.85;max-width:860px;margin-bottom:1.8rem}
 
-.about-grid{display:grid;grid-template-columns:220px 1fr;gap:3rem;align-items:start}
-.about-avatar{width:155px;height:155px;border-radius:50%;background:linear-gradient(135deg,var(--accent2),var(--accent));display:flex;align-items:center;justify-content:center;font-size:3rem;font-weight:700;color:var(--navy);margin:0 auto 1.2rem;border:3px solid var(--accent)}
-.about-text p{color:#a8b2d8;margin-bottom:.9rem;line-height:1.85;font-size:.93rem}
-.info-row{display:flex;gap:.5rem;align-items:flex-start;margin-bottom:.45rem;font-size:.87rem}
-.info-row .lbl{color:var(--muted);min-width:130px;flex-shrink:0}
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:200px 1fr;gap:2.5rem;align-items:start}
+.about-avatar{width:145px;height:145px;border-radius:50%;background:linear-gradient(135deg,var(--accent2),var(--accent));display:flex;align-items:center;justify-content:center;font-size:2.8rem;font-weight:700;color:var(--navy);margin:0 auto 1rem;border:3px solid var(--accent)}
+.about-text p{color:#a8b2d8;margin-bottom:.8rem;line-height:1.85;font-size:.91rem}
+.info-row{display:flex;gap:.5rem;align-items:flex-start;margin-bottom:.4rem;font-size:.85rem}
+.info-row .lbl{color:var(--muted);min-width:125px;flex-shrink:0}
 .info-row .val{color:var(--white)}
 
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem}
-.skill-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.35rem;transition:border-color .3s,transform .2s}
-.skill-card:hover{border-color:var(--accent);transform:translateY(-4px)}
-.skill-icon{font-size:1.5rem;margin-bottom:.55rem}
-.skill-card h3{font-size:.92rem;font-weight:600;margin-bottom:.65rem;color:var(--white)}
-.tags{display:flex;flex-wrap:wrap;gap:.32rem}
-.tag{font-size:.68rem;padding:.2rem .5rem;background:rgba(0,201,255,.09);color:var(--accent);border-radius:4px;border:1px solid rgba(0,201,255,.18)}
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.1rem}
+.skill-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.25rem;transition:border-color .3s,transform .2s}
+.skill-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+.skill-icon{font-size:1.4rem;margin-bottom:.5rem}
+.skill-card h3{font-size:.88rem;font-weight:600;margin-bottom:.6rem;color:var(--white)}
+.tags{display:flex;flex-wrap:wrap;gap:.28rem}
+.tag{font-size:.67rem;padding:.18rem .48rem;background:rgba(0,201,255,.09);color:var(--accent);border-radius:4px;border:1px solid rgba(0,201,255,.16)}
 .tag-green{background:rgba(0,229,160,.08);color:var(--green);border-color:rgba(0,229,160,.2)}
 .tag-orange{background:rgba(255,159,28,.08);color:var(--orange);border-color:rgba(255,159,28,.2)}
 .tag-purple{background:rgba(183,148,244,.08);color:var(--purple);border-color:rgba(183,148,244,.2)}
+.tag-pink{background:rgba(246,135,179,.08);color:var(--pink);border-color:rgba(246,135,179,.2)}
 
-.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:.9rem}
-.cert-badge{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.05rem;text-align:center;transition:border-color .3s,transform .2s}
-.cert-badge:hover{border-color:var(--accent);transform:translateY(-3px)}
-.cert-icon{font-size:1.3rem;margin-bottom:.35rem}
-.cert-badge h4{font-size:.8rem;font-weight:600;color:var(--white);line-height:1.3}
-.cert-badge p{font-size:.7rem;color:var(--muted);margin-top:.2rem}
-.cert-category{font-size:.7rem;color:var(--accent);letter-spacing:1.5px;text-transform:uppercase;margin:1.5rem 0 .7rem;font-weight:600}
+/* REAL-WORLD EXPERIENCE TAB */
+.rwe-tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.8rem}
+.rwe-tab{padding:.45rem 1.1rem;border:1px solid var(--border);border-radius:6px;font-size:.78rem;color:var(--muted);cursor:pointer;background:var(--card);transition:all .2s;user-select:none}
+.rwe-tab.active,.rwe-tab:hover{border-color:var(--accent);color:var(--accent);background:rgba(0,201,255,.06)}
+.rwe-panel{display:none}
+.rwe-panel.active{display:block}
+.rwe-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.4rem;margin-bottom:1rem;transition:border-color .3s}
+.rwe-card:hover{border-color:rgba(0,201,255,.35)}
+.rwe-card-header{display:flex;align-items:flex-start;gap:1rem;margin-bottom:.85rem}
+.rwe-icon{font-size:1.4rem;flex-shrink:0;margin-top:.1rem}
+.rwe-card h4{font-size:.92rem;font-weight:600;color:var(--white);margin-bottom:.2rem}
+.rwe-card .rwe-context{font-size:.78rem;color:var(--accent);letter-spacing:.5px}
+.rwe-why{background:rgba(0,229,160,.04);border-left:3px solid var(--green);padding:.65rem .9rem;border-radius:0 6px 6px 0;margin-bottom:.7rem}
+.rwe-why p{font-size:.82rem;color:#a8b2d8;line-height:1.7}
+.rwe-why .why-label{font-size:.7rem;color:var(--green);letter-spacing:1px;text-transform:uppercase;margin-bottom:.25rem;font-weight:600}
+.rwe-points{list-style:none;display:flex;flex-direction:column;gap:.32rem}
+.rwe-points li{color:#a8b2d8;font-size:.85rem;line-height:1.6;padding-left:.9rem;position:relative}
+.rwe-points li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:.7rem;top:.18rem}
+.rwe-metric{display:inline-block;background:rgba(0,229,160,.1);color:var(--green);border:1px solid rgba(0,229,160,.25);border-radius:4px;font-size:.67rem;padding:.1rem .42rem;margin-left:.35rem;font-weight:600;vertical-align:middle}
 
-.exp-timeline{position:relative;padding-left:2rem}
+/* HIGHLIGHT BOX */
+.hbox{background:rgba(0,201,255,.04);border:1px solid rgba(0,201,255,.13);border-radius:10px;padding:1.15rem 1.35rem;margin-bottom:1.1rem}
+.hbox h4{font-size:.83rem;font-weight:600;color:var(--accent);margin-bottom:.55rem;letter-spacing:.4px}
+.hbox ul{list-style:none;display:flex;flex-direction:column;gap:.28rem}
+.hbox li{color:#a8b2d8;font-size:.83rem;padding-left:.85rem;position:relative;line-height:1.6}
+.hbox li::before{content:'→';position:absolute;left:0;color:var(--accent);font-size:.68rem;top:.2rem}
+
+/* CERTS */
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(178px,1fr));gap:.85rem}
+.cert-badge{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;text-align:center;transition:border-color .3s,transform .2s}
+.cert-badge:hover{border-color:var(--accent);transform:translateY(-2px)}
+.cert-icon{font-size:1.25rem;margin-bottom:.3rem}
+.cert-badge h4{font-size:.78rem;font-weight:600;color:var(--white);line-height:1.3}
+.cert-badge p{font-size:.68rem;color:var(--muted);margin-top:.18rem}
+.cert-cat{font-size:.68rem;color:var(--accent);letter-spacing:1.5px;text-transform:uppercase;margin:1.4rem 0 .65rem;font-weight:600}
+
+/* EXPERIENCE */
+.exp-timeline{position:relative;padding-left:1.8rem}
 .exp-timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--border)}
-.exp-item{position:relative;margin-bottom:2.8rem;padding-left:1.5rem}
-.exp-dot{position:absolute;left:-2.45rem;top:.4rem;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid var(--navy)}
-.exp-period{font-size:.74rem;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:.2rem}
-.exp-role{font-size:1.02rem;font-weight:700;color:var(--white)}
-.exp-company{font-size:.86rem;color:var(--muted);margin-bottom:.75rem}
-.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:.4rem}
-.exp-bullets li{color:#a8b2d8;font-size:.87rem;line-height:1.65;padding-left:1rem;position:relative}
-.exp-bullets li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:.72rem;top:.17rem}
-.exp-metric{display:inline-block;background:rgba(0,229,160,.1);color:var(--green);border:1px solid rgba(0,229,160,.25);border-radius:4px;font-size:.69rem;padding:.13rem .48rem;margin-left:.4rem;font-weight:600;vertical-align:middle}
+.exp-item{position:relative;margin-bottom:2.5rem;padding-left:1.4rem}
+.exp-dot{position:absolute;left:-2.3rem;top:.4rem;width:11px;height:11px;border-radius:50%;background:var(--accent);border:2px solid var(--navy)}
+.exp-period{font-size:.72rem;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:.18rem}
+.exp-role{font-size:1rem;font-weight:700;color:var(--white)}
+.exp-company{font-size:.84rem;color:var(--muted);margin-bottom:.65rem}
+.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:.35rem}
+.exp-bullets li{color:#a8b2d8;font-size:.85rem;line-height:1.62;padding-left:.9rem;position:relative}
+.exp-bullets li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:.7rem;top:.18rem}
+.exp-metric{display:inline-block;background:rgba(0,229,160,.1);color:var(--green);border:1px solid rgba(0,229,160,.25);border-radius:4px;font-size:.67rem;padding:.1rem .42rem;margin-left:.35rem;font-weight:600;vertical-align:middle}
 
-/* HIGHLIGHT BOX for special skill areas */
-.highlight-box{background:rgba(0,201,255,.04);border:1px solid rgba(0,201,255,.15);border-radius:10px;padding:1.2rem 1.4rem;margin-bottom:1.2rem}
-.highlight-box h4{font-size:.85rem;font-weight:600;color:var(--accent);margin-bottom:.6rem;letter-spacing:.5px}
-.highlight-box ul{list-style:none;display:flex;flex-direction:column;gap:.3rem}
-.highlight-box li{color:#a8b2d8;font-size:.85rem;padding-left:.9rem;position:relative;line-height:1.6}
-.highlight-box li::before{content:'→';position:absolute;left:0;color:var(--accent);font-size:.7rem;top:.18rem}
+/* EDU */
+.edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.1rem}
+.edu-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.35rem}
+.edu-degree{font-size:.93rem;font-weight:700;color:var(--white);margin-bottom:.28rem}
+.edu-school{font-size:.83rem;color:var(--accent);margin-bottom:.22rem}
+.edu-info{font-size:.8rem;color:var(--muted);line-height:1.5}
+.edu-grade{display:inline-block;margin-top:.55rem;padding:.18rem .68rem;background:rgba(0,201,255,.1);color:var(--accent);border-radius:4px;font-size:.74rem}
 
-.edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.2rem}
-.edu-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.4rem}
-.edu-degree{font-size:.95rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
-.edu-school{font-size:.85rem;color:var(--accent);margin-bottom:.25rem}
-.edu-info{font-size:.82rem;color:var(--muted);line-height:1.5}
-.edu-grade{display:inline-block;margin-top:.6rem;padding:.2rem .72rem;background:rgba(0,201,255,.1);color:var(--accent);border-radius:4px;font-size:.76rem}
-
-.ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:.95rem}
-.ach-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.05rem;display:flex;gap:.85rem;align-items:flex-start;transition:border-color .3s}
+/* ACH */
+.ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:.9rem}
+.ach-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;display:flex;gap:.8rem;align-items:flex-start;transition:border-color .3s}
 .ach-card:hover{border-color:var(--accent)}
-.ach-icon{color:var(--accent);font-size:1.05rem;margin-top:.1rem;flex-shrink:0}
-.ach-card p{font-size:.86rem;color:#a8b2d8;line-height:1.55}
+.ach-icon{color:var(--accent);font-size:1rem;margin-top:.12rem;flex-shrink:0}
+.ach-card p{font-size:.84rem;color:#a8b2d8;line-height:1.5}
 
-.pub-card{background:var(--card);border:1px solid var(--accent);border-radius:12px;padding:1.8rem;max-width:860px}
-.pub-label{font-size:.7rem;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:.6rem}
-.pub-title{font-size:.98rem;font-weight:600;color:var(--white);margin-bottom:.65rem;line-height:1.55}
-.pub-links{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.85rem}
-.pub-link{font-size:.8rem;color:var(--accent);border:1px solid var(--accent);padding:.26rem .82rem;border-radius:4px;transition:background .2s}
+/* PUB */
+.pub-card{background:var(--card);border:1px solid var(--accent);border-radius:12px;padding:1.7rem;max-width:860px}
+.pub-label{font-size:.68rem;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:.55rem}
+.pub-title{font-size:.95rem;font-weight:600;color:var(--white);margin-bottom:.6rem;line-height:1.55}
+.pub-links{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:.8rem}
+.pub-link{font-size:.78rem;color:var(--accent);border:1px solid var(--accent);padding:.24rem .78rem;border-radius:4px;transition:background .2s}
 .pub-link:hover{background:rgba(0,201,255,.1)}
 
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
-.contact-item{display:flex;align-items:center;gap:1rem;padding:.85rem 1rem;background:var(--card);border:1px solid var(--border);border-radius:10px;margin-bottom:.7rem;transition:border-color .3s}
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.contact-item{display:flex;align-items:center;gap:.9rem;padding:.8rem 1rem;background:var(--card);border:1px solid var(--border);border-radius:10px;margin-bottom:.65rem;transition:border-color .3s}
 .contact-item:hover{border-color:var(--accent)}
-.c-icon{font-size:1.15rem;color:var(--accent);flex-shrink:0}
-.c-lbl{font-size:.73rem;color:var(--muted)}
-.c-val{font-size:.88rem;color:var(--white)}
+.c-icon{font-size:1.1rem;color:var(--accent);flex-shrink:0}
+.c-lbl{font-size:.7rem;color:var(--muted)}
+.c-val{font-size:.86rem;color:var(--white)}
 
-footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:var(--muted);font-size:.8rem}
+footer{text-align:center;padding:1.8rem;border-top:1px solid var(--border);color:var(--muted);font-size:.78rem}
 @media(max-width:768px){.about-grid,.contact-grid{grid-template-columns:1fr}.nav-links{display:none}}
 </style>
 </head>
@@ -124,7 +154,9 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#realworld">Real-World XP</a></li>
     <li><a href="#log-engineering">Log Engineering</a></li>
+    <li><a href="#devsecops">DevSecOps</a></li>
     <li><a href="#certifications">Certs</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#education">Education</a></li>
@@ -139,18 +171,19 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   <div style="position:relative;z-index:1">
     <div class="hero-badge">Senior Security Engineer</div>
     <h1>Shravan Kumar <span>Avula</span></h1>
-    <div class="hero-title">Cloud Security · DevSecOps · Detection Engineering · Log Analytics · Incident Response · Digital Forensics</div>
-    <div class="sc-badge">✓ Eligible for SC Clearance · UK</div>
-    <p class="hero-desc">Senior Security Engineer with <strong>10+ years</strong> securing complex hybrid environments. Specialised in Azure, M365 and AWS. Expert in designing secure cloud foundations with Terraform &amp; CloudFormation, hardening containerised workloads in AKS, embedding security into DevSecOps/CI-CD pipelines via GitHub Actions and Azure DevOps, and building high-fidelity detection engineering practices through custom log collection, DCR-based ingestion pipelines, log normalisation, and KQL/XQL-driven detection tuning. Proven track record translating complex cloud threats into actionable governance for technical teams and executive stakeholders.</p>
+    <div class="hero-title">Cloud Security · DevSecOps · Detection Engineering · IAM · Container Security · Log Analytics · Incident Response · Digital Forensics</div>
+    <div class="sc-badge">✓ Eligible for SC Clearance · UK · +44 7878 867698</div>
+    <p class="hero-desc">Senior Security Engineer with <strong>10+ years</strong> securing complex hybrid environments across Azure, AWS, and GCP. Expert in multi-cloud security architecture, Identity &amp; Access Management, Kubernetes/container hardening, embedding security into DevSecOps pipelines via GitHub Actions and Azure DevOps, building high-fidelity detection engineering through custom log collection, DCR-based ingestion, ASIM normalisation, KQL/XQL detection tuning, and SOAR automation. Proven track record of reducing organisational risk and translating complex cloud threats into actionable governance for both technical teams and executive stakeholders.</p>
     <div class="hero-stats">
       <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Years Experience</div></div>
       <div class="stat"><div class="stat-num">16+</div><div class="stat-label">Certifications</div></div>
       <div class="stat"><div class="stat-num">40+</div><div class="stat-label">Detection Use Cases</div></div>
       <div class="stat"><div class="stat-num">65%</div><div class="stat-label">Vuln Reduction</div></div>
+      <div class="stat"><div class="stat-num">40%</div><div class="stat-label">Misconfig Reduction</div></div>
     </div>
     <div>
       <a href="#contact" class="btn">Get In Touch</a>
-      <a href="#experience" class="btn btn-outline">View Experience</a>
+      <a href="#realworld" class="btn btn-outline">Real-World Experience</a>
     </div>
   </div>
 </section>
@@ -164,21 +197,21 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
     <div class="about-grid">
       <div style="text-align:center">
         <div class="about-avatar">SK</div>
-        <div style="display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-top:.75rem">
-          <a href="https://www.linkedin.com/in/shravan-kumar-yadav-684559170/" class="btn" style="font-size:.78rem;padding:.45rem 1.1rem">LinkedIn</a>
-          <a href="https://www.youtube.com/channel/UCH8dJWHivSYKC3v0r9bdyiA" class="btn btn-outline" style="font-size:.78rem;padding:.45rem 1.1rem">YouTube</a>
+        <div style="display:flex;flex-wrap:wrap;gap:.45rem;justify-content:center;margin-top:.7rem">
+          <a href="https://www.linkedin.com/in/shravan-kumar-yadav-684559170/" class="btn" style="font-size:.75rem;padding:.42rem 1rem">LinkedIn</a>
+          <a href="https://www.youtube.com/channel/UCH8dJWHivSYKC3v0r9bdyiA" class="btn btn-outline" style="font-size:.75rem;padding:.42rem 1rem">YouTube</a>
         </div>
       </div>
       <div class="about-text">
-        <p>A highly skilled Senior Security Engineer with a decade of experience securing enterprise environments across top MNCs. My expertise spans <strong>cloud security architecture</strong>, <strong>DevSecOps</strong>, <strong>detection engineering</strong>, <strong>log analytics &amp; normalisation</strong>, <strong>incident response</strong>, and <strong>digital forensics</strong>.</p>
-        <p>I specialise in building end-to-end security pipelines — from <strong>custom log collection and DCR-based ingestion</strong> through to <strong>KQL/XQL detection rule development and fine-tuning</strong> — ensuring high-fidelity alerts with minimal noise. I bridge the gap between security engineering and agile development through GitHub Advanced Security and Azure DevOps security integration.</p>
-        <p>Masters graduate with Distinction from London Metropolitan University. Scopus-published researcher. Multi-cloud certified across Azure, AWS, and Microsoft security platforms.</p>
-        <div style="margin-top:1.1rem">
+        <p>A highly skilled Senior Security Engineer with a decade of experience securing enterprise environments across top MNCs. My expertise spans <strong>cloud security architecture</strong>, <strong>multi-cloud IAM</strong>, <strong>DevSecOps</strong>, <strong>detection engineering</strong>, <strong>log analytics &amp; normalisation</strong>, <strong>vulnerability management</strong>, <strong>threat modelling</strong>, <strong>incident response</strong>, and <strong>digital forensics</strong>.</p>
+        <p>I specialise in bridging the gap between security and engineering — designing zero-trust cloud foundations, embedding automated security gates into CI/CD pipelines, building PKI and secrets management infrastructure, and constructing end-to-end log pipelines from custom collection through ASIM normalisation to high-fidelity KQL detection rules.</p>
+        <p>Masters with Distinction from London Metropolitan University. Scopus-indexed published researcher. Certified across Azure, AWS, Microsoft Security, CISM, CCNA/CCNP, and Digital Forensics.</p>
+        <div style="margin-top:1rem">
           <div class="info-row"><span class="lbl">Location</span><span class="val">Kettering, England, UK</span></div>
           <div class="info-row"><span class="lbl">Phone</span><span class="val">+44 7878 867698</span></div>
           <div class="info-row"><span class="lbl">Email</span><span class="val">Shra1avula@gmail.com</span></div>
           <div class="info-row"><span class="lbl">Clearance</span><span class="val" style="color:var(--green)">Eligible for SC Clearance</span></div>
-          <div class="info-row"><span class="lbl">ORCiD</span><a href="https://orcid.org/0009-0005-7983-7253" style="font-size:.86rem">0009-0005-7983-7253</a></div>
+          <div class="info-row"><span class="lbl">ORCiD</span><a href="https://orcid.org/0009-0005-7983-7253" style="font-size:.84rem">0009-0005-7983-7253</a></div>
         </div>
       </div>
     </div>
@@ -195,13 +228,34 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 
       <div class="skill-card">
         <div class="skill-icon">☁️</div>
-        <h3>Cloud Security — Azure &amp; AWS</h3>
+        <h3>Cloud Security — Azure, AWS &amp; GCP</h3>
         <div class="tags">
-          <span class="tag">Defender for Cloud (CSPM/CNAPP)</span><span class="tag">Microsoft Sentinel</span>
-          <span class="tag">Entra ID / AAD</span><span class="tag">PIM / RBAC / Conditional Access</span>
-          <span class="tag">AWS GuardDuty</span><span class="tag">CloudTrail / CloudWatch</span>
-          <span class="tag">AWS Inspector</span><span class="tag">AWS Config / SCPs</span>
-          <span class="tag">AWS KMS</span><span class="tag">Zero Trust Architecture</span>
+          <span class="tag">Defender for Cloud (CSPM/CNAPP/CWPP)</span>
+          <span class="tag">Azure Security Center</span><span class="tag">Microsoft Sentinel</span>
+          <span class="tag">AWS Security Hub</span><span class="tag">GuardDuty</span>
+          <span class="tag">CloudTrail / CloudWatch</span><span class="tag">AWS Inspector</span>
+          <span class="tag">AWS Config</span><span class="tag">Control Tower / SCPs</span>
+          <span class="tag">AWS WAF</span><span class="tag">Azure Policy</span>
+          <span class="tag">Entra ID / AAD</span><span class="tag">PIM / RBAC</span>
+          <span class="tag">Conditional Access</span><span class="tag">Zero Trust Architecture</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🔐</div>
+        <h3>Identity &amp; Access Management (IAM)</h3>
+        <div class="tags">
+          <span class="tag tag-pink">Least Privilege / RBAC / ABAC</span>
+          <span class="tag tag-pink">Just-in-Time (JIT) Access</span>
+          <span class="tag tag-pink">Zero Standing Privileges</span>
+          <span class="tag tag-pink">Microsoft Entra ID / PIM</span>
+          <span class="tag tag-pink">AWS IAM / SCPs</span>
+          <span class="tag tag-pink">Okta / Active Directory</span>
+          <span class="tag tag-pink">HashiCorp Vault (Secrets)</span>
+          <span class="tag tag-pink">OAuth / SAML / OIDC / MFA</span>
+          <span class="tag tag-pink">PKI &amp; Certificate Lifecycle</span>
+          <span class="tag tag-pink">Workload Identity Federation</span>
+          <span class="tag tag-pink">Identity Federation</span>
         </div>
       </div>
 
@@ -212,30 +266,29 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
           <span class="tag tag-green">GitHub Advanced Security (GHAS)</span>
           <span class="tag tag-green">GitHub Actions (Security Gates)</span>
           <span class="tag tag-green">CodeQL / Secret Scanning</span>
-          <span class="tag tag-green">Dependabot</span>
+          <span class="tag tag-green">Dependabot / SBOM</span>
+          <span class="tag tag-green">SLSA Provenance</span>
           <span class="tag tag-green">Azure DevOps Pipelines</span>
-          <span class="tag tag-green">SAST / DAST / SCA</span>
-          <span class="tag tag-green">SonarCloud / SonarQube</span>
-          <span class="tag tag-green">Snyk</span><span class="tag tag-green">OWASP ZAP</span>
-          <span class="tag tag-green">Quality Gates</span><span class="tag tag-green">IaC Scanning (Terraform)</span>
-          <span class="tag tag-green">Dependency Scanning</span>
+          <span class="tag tag-green">MSDO Extension</span>
+          <span class="tag tag-green">Jenkins / GitLab CI / ArgoCD</span>
+          <span class="tag tag-green">SAST / DAST / SCA / IAST</span>
+          <span class="tag tag-green">Snyk / Wiz / KICS / Checkmarx</span>
+          <span class="tag tag-green">SonarQube / SonarCloud</span>
+          <span class="tag tag-green">Supply Chain Security</span>
+          <span class="tag tag-green">Policy as Code</span>
         </div>
       </div>
 
       <div class="skill-card">
-        <div class="skill-icon">📡</div>
-        <h3>Log Engineering &amp; Detection Tuning</h3>
+        <div class="skill-icon">📦</div>
+        <h3>Infrastructure as Code (IaC)</h3>
         <div class="tags">
-          <span class="tag tag-purple">Data Collection Rules (DCR)</span>
-          <span class="tag tag-purple">Custom Log Ingestion (MMA/AMA)</span>
-          <span class="tag tag-purple">Log Normalisation (ASIM)</span>
-          <span class="tag tag-purple">Log Analytics Workspace</span>
-          <span class="tag tag-purple">KQL Query Optimisation</span>
-          <span class="tag tag-purple">XQL (Cortex XSOAR)</span>
-          <span class="tag tag-purple">Regex Log Parsing</span>
-          <span class="tag tag-purple">Ingestion Cost Tuning</span>
-          <span class="tag tag-purple">Alert Fidelity Tuning</span>
-          <span class="tag tag-purple">False Positive Reduction</span>
+          <span class="tag">Terraform</span><span class="tag">OpenTofu</span><span class="tag">Terragrunt</span>
+          <span class="tag">CloudFormation</span><span class="tag">Helm</span><span class="tag">Ansible</span>
+          <span class="tag">IaC Security Scanning (Checkov/KICS)</span>
+          <span class="tag">Misconfiguration Detection</span>
+          <span class="tag">Secure-by-Design IaC</span>
+          <span class="tag">Automated Compliance Validation</span>
         </div>
       </div>
 
@@ -243,10 +296,31 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
         <div class="skill-icon">🐳</div>
         <h3>Container &amp; Kubernetes Security</h3>
         <div class="tags">
-          <span class="tag">AKS / EKS</span><span class="tag">ACR</span><span class="tag">Docker Security</span>
-          <span class="tag">Image Scanning</span><span class="tag">Runtime Protection</span>
-          <span class="tag">K8s Admission Controls</span><span class="tag">Kube-Forensics</span>
-          <span class="tag">CIS Benchmarks L1/L2</span><span class="tag">Network Policies</span>
+          <span class="tag">AKS / EKS / ECS</span><span class="tag">ACR / Docker</span>
+          <span class="tag">Image Scanning (Trivy)</span>
+          <span class="tag">Runtime Protection</span>
+          <span class="tag">K8s Admission Controls</span>
+          <span class="tag">Kubernetes RBAC</span><span class="tag">Network Policies</span>
+          <span class="tag">Cilium</span><span class="tag">Service Mesh Security</span>
+          <span class="tag">CIS Benchmarks L1/L2</span>
+          <span class="tag">Kube-Forensics</span><span class="tag">Supply Chain Attacks</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">📡</div>
+        <h3>Log Engineering &amp; Detection</h3>
+        <div class="tags">
+          <span class="tag tag-purple">Data Collection Rules (DCR)</span>
+          <span class="tag tag-purple">Azure Monitor Agent (AMA)</span>
+          <span class="tag tag-purple">Custom Log Ingestion API</span>
+          <span class="tag tag-purple">ASIM Normalisation</span>
+          <span class="tag tag-purple">KQL Optimisation</span>
+          <span class="tag tag-purple">XQL (Cortex XSOAR)</span>
+          <span class="tag tag-purple">Regex Log Parsing</span>
+          <span class="tag tag-purple">Ingestion Cost Tuning</span>
+          <span class="tag tag-purple">Alert Fidelity / FP Reduction</span>
+          <span class="tag tag-purple">UEBA / Behaviour Analytics</span>
         </div>
       </div>
 
@@ -255,21 +329,27 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
         <h3>Incident Response &amp; SOC</h3>
         <div class="tags">
           <span class="tag">MITRE ATT&amp;CK</span><span class="tag">SOAR / Cortex XSOAR</span>
-          <span class="tag">CrowdStrike</span><span class="tag">Splunk</span><span class="tag">IBM QRadar</span>
-          <span class="tag">SentinelOne</span><span class="tag">FireEye / ETP</span>
-          <span class="tag">Netskope</span><span class="tag">Tenable</span>
-          <span class="tag">MTTD/MTTR Reduction</span><span class="tag">Automated SOAR Playbooks</span>
+          <span class="tag">CrowdStrike / XDR</span><span class="tag">Splunk</span>
+          <span class="tag">IBM QRadar</span><span class="tag">SentinelOne</span>
+          <span class="tag">FireEye / ETP</span><span class="tag">Netskope</span>
+          <span class="tag">Tenable / Rapid7 / Qualys</span>
+          <span class="tag">MTTD/MTTR Reduction</span>
+          <span class="tag">Threat Hunting</span><span class="tag">Root Cause Analysis</span>
         </div>
       </div>
 
       <div class="skill-card">
-        <div class="skill-icon">🔬</div>
-        <h3>Digital Forensics &amp; Malware Analysis</h3>
+        <div class="skill-icon">🔍</div>
+        <h3>Vulnerability Management</h3>
         <div class="tags">
-          <span class="tag">Magnet AXIOM</span><span class="tag">FTK / EnCase</span>
-          <span class="tag">Cellebrite UFED</span><span class="tag">Volatility</span><span class="tag">Autopsy</span>
-          <span class="tag">Windows / NIX / macOS Forensics</span>
-          <span class="tag">Mobile &amp; Cloud Forensics</span><span class="tag">Memory Forensics</span>
+          <span class="tag">Rapid7 / Tenable / Qualys</span>
+          <span class="tag">Wiz</span><span class="tag">Snyk</span>
+          <span class="tag">Container Scanning</span>
+          <span class="tag">Dependency Scanning</span>
+          <span class="tag">Vulnerability Prioritisation</span>
+          <span class="tag">Remediation Workflows</span>
+          <span class="tag">CVE Tracking</span>
+          <span class="tag">Pen Test Oversight</span>
         </div>
       </div>
 
@@ -277,23 +357,70 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
         <div class="skill-icon">💻</div>
         <h3>Automation &amp; Scripting</h3>
         <div class="tags">
-          <span class="tag tag-orange">PowerShell</span><span class="tag tag-orange">Python</span>
-          <span class="tag tag-orange">KQL</span><span class="tag tag-orange">XQL (Cortex)</span>
-          <span class="tag tag-orange">Terraform</span><span class="tag tag-orange">YAML</span>
-          <span class="tag tag-orange">Regex (Log Parsing)</span><span class="tag tag-orange">SOAR Playbooks</span>
+          <span class="tag tag-orange">Python</span><span class="tag tag-orange">PowerShell</span>
+          <span class="tag tag-orange">Bash</span><span class="tag tag-orange">KQL</span>
+          <span class="tag tag-orange">XQL (Cortex)</span><span class="tag tag-orange">Terraform / YAML</span>
+          <span class="tag tag-orange">Regex (Log Parsing)</span>
           <span class="tag tag-orange">GitHub Actions Workflows</span>
+          <span class="tag tag-orange">AWS CLI / Azure CLI</span>
+          <span class="tag tag-orange">SOAR Playbooks</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <h3>Network &amp; Perimeter Security</h3>
+        <div class="tags">
+          <span class="tag">VNet / VPC Design</span><span class="tag">Hub-and-Spoke</span>
+          <span class="tag">IPsec VPN</span><span class="tag">Cisco ASA / Palo Alto / F5</span>
+          <span class="tag">WAF / DDoS Protection</span>
+          <span class="tag">CDN Security</span><span class="tag">API Security</span>
+          <span class="tag">IDS/IPS</span><span class="tag">NSGs / UDRs</span>
+          <span class="tag">CCNA / CCNP</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">📊</div>
+        <h3>Observability &amp; Security Analytics</h3>
+        <div class="tags">
+          <span class="tag">Datadog</span><span class="tag">Prometheus / Grafana</span>
+          <span class="tag">OpenTelemetry</span><span class="tag">Power BI</span>
+          <span class="tag">Splunk Dashboards</span>
+          <span class="tag">Log Pipelines</span>
+          <span class="tag">Security Metrics &amp; Telemetry</span>
+          <span class="tag">Alert Engineering</span>
         </div>
       </div>
 
       <div class="skill-card">
         <div class="skill-icon">📋</div>
-        <h3>GRC, Compliance &amp; Threat Modelling</h3>
+        <h3>GRC, Threat Modelling &amp; Compliance</h3>
         <div class="tags">
-          <span class="tag">ISO 27001/2</span><span class="tag">NIST CSF</span><span class="tag">GDPR</span>
-          <span class="tag">PCI DSS</span><span class="tag">SOC 2 Type II</span>
+          <span class="tag">STRIDE / PASTA</span>
+          <span class="tag">OWASP Threat Dragon</span>
+          <span class="tag">MS Threat Modeling Tool</span>
+          <span class="tag">ISO 27001/2</span><span class="tag">NIST CSF</span>
+          <span class="tag">GDPR</span><span class="tag">PCI DSS</span>
+          <span class="tag">SOC 2 Type II</span>
           <span class="tag">CIS L1/L2</span><span class="tag">Cyber Resilience Act</span>
-          <span class="tag">STRIDE</span><span class="tag">PASTA</span>
-          <span class="tag">OWASP Threat Dragon</span><span class="tag">MS Threat Modeling Tool</span>
+          <span class="tag">OWASP ASVS / Top 10</span>
+          <span class="tag">SLSA / CycloneDX SBOM</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🤖</div>
+        <h3>Digital Forensics &amp; AI/ML Security</h3>
+        <div class="tags">
+          <span class="tag">Magnet AXIOM / FTK / EnCase</span>
+          <span class="tag">Cellebrite / Volatility / Autopsy</span>
+          <span class="tag">Windows / NIX / macOS Forensics</span>
+          <span class="tag">Cloud &amp; Mobile Forensics</span>
+          <span class="tag">AI Prompt Injection</span>
+          <span class="tag">Model Extraction</span>
+          <span class="tag">Adversarial Attacks</span>
+          <span class="tag">Data Poisoning</span>
         </div>
       </div>
 
@@ -301,108 +428,283 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   </div>
 </section>
 
+<!-- REAL-WORLD EXPERIENCE -->
+<section id="realworld">
+  <div class="container">
+    <div class="section-label">Hands-On Practice</div>
+    <div class="section-title">Real-World Experience — Why I Used It</div>
+    <div class="section-line"></div>
+    <p class="section-intro">Each topic below maps to a real problem I faced in production environments — the business context that drove the need, what I actually built or did, and the outcome it delivered.</p>
+
+    <div class="rwe-tabs">
+      <div class="rwe-tab active" onclick="showTab('cloud')">☁️ Cloud Security</div>
+      <div class="rwe-tab" onclick="showTab('iam')">🔐 IAM &amp; Zero Trust</div>
+      <div class="rwe-tab" onclick="showTab('devsecops')">🔧 DevSecOps</div>
+      <div class="rwe-tab" onclick="showTab('containers')">🐳 Containers &amp; K8s</div>
+      <div class="rwe-tab" onclick="showTab('detection')">📡 Detection &amp; Logs</div>
+      <div class="rwe-tab" onclick="showTab('ir')">🛡️ IR &amp; Forensics</div>
+      <div class="rwe-tab" onclick="showTab('iac')">📦 IaC Security</div>
+      <div class="rwe-tab" onclick="showTab('vuln')">🔍 Vuln Management</div>
+      <div class="rwe-tab" onclick="showTab('governance')">📋 GRC &amp; Threat Modelling</div>
+    </div>
+
+    <!-- CLOUD -->
+    <div class="rwe-panel active" id="tab-cloud">
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">☁️</div><div><h4>Multi-Cloud Posture Management (CSPM/CNAPP)</h4><div class="rwe-context">Concentrix Ltd. &amp; Devi Technologies · Azure + AWS</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>Client environments had sprawling Azure and AWS deployments with no centralised visibility into misconfigurations. Security posture was unknown — no one could answer "are we compliant?" without manual checks. I needed a scalable way to continuously audit hundreds of resources.</p></div>
+        <ul class="rwe-points">
+          <li>Deployed and optimised <strong>Defender for Cloud (CSPM)</strong> across Azure subscriptions — enabling Secure Score tracking, regulatory compliance dashboards (PCI DSS, CIS), and automated recommendations.</li>
+          <li>Connected <strong>AWS Security Hub</strong> to aggregate findings from GuardDuty, Inspector, and Macie into a single pane of glass alongside Azure Defender findings.</li>
+          <li>Built custom <strong>Azure Policy initiatives</strong> to enforce tagging, encryption, and network security group rules — blocking non-compliant deployments at provision time.<span class="rwe-metric">Misconfigs ↓40%</span></li>
+          <li>Used <strong>AWS Control Tower with SCPs</strong> to enforce guardrails across multi-account environments, preventing overly permissive IAM policies at the organisation level.</li>
+        </ul>
+      </div>
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">🌐</div><div><h4>WAF, DDoS &amp; Perimeter Security</h4><div class="rwe-context">Tech Mahindra &amp; Star Compliance · Azure + AWS</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>Client-facing applications were exposed to OWASP Top 10 attacks and volumetric DDoS. A regulated client required WAF coverage as part of PCI DSS compliance — no traffic to production could bypass inspection.</p></div>
+        <ul class="rwe-points">
+          <li>Deployed <strong>AWS WAF</strong> with managed rule groups (OWASP, known bad IPs) and custom rules for rate limiting and geo-blocking on API Gateway and CloudFront distributions.</li>
+          <li>Configured <strong>Azure DDoS Protection Standard</strong> and integrated telemetry into Sentinel for attack pattern detection and automated response playbooks.</li>
+          <li>Implemented <strong>Azure API Management</strong> security policies — JWT validation, rate limiting, IP filtering, and mTLS for backend service communication.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- IAM -->
+    <div class="rwe-panel" id="tab-iam">
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">🔐</div><div><h4>Privileged Identity Management &amp; Zero Standing Privileges</h4><div class="rwe-context">Concentrix Ltd. · Azure Entra ID / PIM</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>A security audit revealed that 30+ service accounts and engineers held permanent Global Admin or Owner roles in Azure — a massive blast radius if compromised. Regulators flagged this as a critical finding under ISO 27001. I was tasked with eliminating standing privileges entirely.</p></div>
+        <ul class="rwe-points">
+          <li>Implemented <strong>Azure PIM (Privileged Identity Management)</strong> across all privileged roles — converting permanent assignments to time-bound, approval-gated, MFA-required Just-in-Time activations.</li>
+          <li>Configured <strong>Conditional Access policies</strong> enforcing compliant device, MFA, and named-location restrictions for all admin role activations.</li>
+          <li>Eliminated unused service principal permissions by right-sizing RBAC assignments using <strong>Azure Access Reviews</strong> — automated quarterly reviews with auto-revocation on no response.</li>
+          <li>Built <strong>Sentinel detection rules</strong> to alert on PIM role activations outside business hours, from unfamiliar locations, or without MFA completion.</li>
+        </ul>
+      </div>
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">🔑</div><div><h4>Workload Identity Federation &amp; Secrets Elimination</h4><div class="rwe-context">Star Compliance &amp; Devi Technologies · Azure DevOps + AWS</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>CI/CD pipelines were authenticating to Azure and AWS using long-lived client secrets stored in pipeline variables — a secret sprawl and rotation nightmare. A leaked secret had previously caused a near-miss incident. I needed to eliminate static secrets from pipelines entirely.</p></div>
+        <ul class="rwe-points">
+          <li>Replaced all Azure DevOps service principal client secrets with <strong>Workload Identity Federation (OIDC)</strong> — pipelines now authenticate using short-lived tokens, no secrets stored anywhere.</li>
+          <li>Implemented <strong>AWS IAM Roles Anywhere</strong> and OIDC federation for GitHub Actions — GitHub workflows assume IAM roles directly without AWS access keys.</li>
+          <li>Integrated <strong>HashiCorp Vault</strong> for dynamic secret generation — database credentials, API keys, and certificates issued per-pipeline-run with automatic expiry.</li>
+          <li>Audited and rotated all legacy static credentials; implemented <strong>automated credential rotation</strong> using AWS Secrets Manager and Azure Key Vault rotation policies.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DEVSECOPS -->
+    <div class="rwe-panel" id="tab-devsecops">
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">🐙</div><div><h4>GitHub Advanced Security — CodeQL, Secret Scanning &amp; Dependabot</h4><div class="rwe-context">Concentrix Ltd. · GitHub Enterprise</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>Development teams were shipping code with no automated security gates — vulnerabilities were only found during quarterly pen tests, meaning code lived in production with known flaws for months. A developer accidentally committed an AWS secret key to a public repo, which was immediately exploited. I needed to embed security into the developer workflow without friction.</p></div>
+        <ul class="rwe-points">
+          <li>Enabled <strong>GHAS (GitHub Advanced Security)</strong> across 80+ repositories — configured CodeQL SAST with custom query suites targeting injection, auth bypass, and hardcoded secret patterns.</li>
+          <li>Activated <strong>Secret Scanning with push protection</strong> — prevented 15+ accidental credential commits in the first month by blocking pushes containing API keys, tokens, and connection strings.</li>
+          <li>Configured <strong>Dependabot</strong> with grouped update PRs, version pinning, and auto-merge for patch updates — reducing dependency vulnerability remediation time from weeks to days.</li>
+          <li>Built <strong>GitHub Actions security workflows</strong> integrating Snyk (SCA), Trivy (container), OWASP ZAP (DAST), and SonarCloud (SAST) as mandatory PR gates — builds fail on high/critical findings.</li>
+        </ul>
+      </div>
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">🔷</div><div><h4>Supply Chain Security — SBOM &amp; SLSA Provenance</h4><div class="rwe-context">Concentrix Ltd. · Azure DevOps + GitHub Actions</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>Following Log4Shell, leadership demanded full visibility into every software component and its origin across all products — they could not answer "are we affected?" without days of manual investigation. Supply chain integrity became a board-level concern.</p></div>
+        <ul class="rwe-points">
+          <li>Integrated <strong>SBOM generation (CycloneDX format)</strong> into all CI pipelines using Syft — every build now produces a machine-readable bill of materials stored as a build artifact.</li>
+          <li>Implemented <strong>SLSA Level 2 provenance</strong> for critical services — build provenance attestations signed and stored, enabling verification that artifacts were built from trusted sources without tampering.</li>
+          <li>Built a <strong>vulnerability triage dashboard</strong> (Power BI + Defender for Cloud) correlating SBOM data with NVD/CVE feeds — reducing Log4j-style blast radius assessment from days to hours.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CONTAINERS -->
+    <div class="rwe-panel" id="tab-containers">
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">🐳</div><div><h4>Kubernetes Security Hardening &amp; Runtime Protection</h4><div class="rwe-context">Concentrix Ltd. &amp; Star Compliance · AKS / EKS</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>A client's AKS workload had no admission control — developers were deploying containers as root, using images with critical CVEs, and with no network policies isolating namespaces. A container escape vulnerability in the wild made this immediately urgent. I had to harden the cluster without disrupting running workloads.</p></div>
+        <ul class="rwe-points">
+          <li>Deployed <strong>Azure Policy for AKS</strong> (Gatekeeper-based admission control) — blocked deployment of privileged containers, enforced read-only root filesystems, and required resource limits on all pods.</li>
+          <li>Implemented <strong>Kubernetes Network Policies</strong> to enforce namespace isolation — services could only communicate via explicitly defined ingress/egress rules, blocking lateral movement paths.</li>
+          <li>Configured <strong>Defender for Containers</strong> with runtime threat detection — alerted on suspicious process execution inside containers (reverse shells, crypto miners, privilege escalation attempts).</li>
+          <li>Enforced <strong>image scanning in ACR</strong> using Trivy and Defender for Containers — admission webhook blocked deployment of images with CRITICAL CVEs above a defined threshold.</li>
+          <li>Applied <strong>CIS Kubernetes Benchmark (L1 &amp; L2)</strong> hardening across AKS control plane and node pools — API server audit logging, etcd encryption, and kubelet authentication enforced.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DETECTION & LOGS -->
+    <div class="rwe-panel" id="tab-detection">
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">📥</div><div><h4>Custom Log Collection via DCRs &amp; AMA</h4><div class="rwe-context">Devi Technologies &amp; Concentrix · Microsoft Sentinel</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>Client had legacy on-premises servers and custom application logs that had no native Sentinel connector. Security events from these sources were invisible to the SOC — blind spots that attackers had already exploited via an undetected lateral movement chain. I needed to ingest these logs without relying on paid third-party connectors.</p></div>
+        <ul class="rwe-points">
+          <li>Designed <strong>Azure Monitor Data Collection Rules (DCRs)</strong> to collect custom application logs, syslog, and Windows Security Events from on-premises servers via Arc-enabled AMA deployments.</li>
+          <li>Used the <strong>Logs Ingestion API</strong> with custom DCR transformations to ingest structured JSON from a legacy SIEM export — parsing and normalising fields at ingestion time before landing in Log Analytics.</li>
+          <li>Created <strong>custom tables (Analytics tier)</strong> for detection-critical data and <strong>Basic tier</strong> for high-volume raw logs — achieving 35% cost reduction without losing security coverage.</li>
+          <li>Authored <strong>ASIM parsers</strong> for Cisco ASA and Palo Alto firewall logs — normalised vendor-specific field names into standard ASIM NetworkSession schema enabling cross-source KQL queries.</li>
+        </ul>
+      </div>
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">🎯</div><div><h4>Detection Rule Building &amp; Fine-Tuning</h4><div class="rwe-context">Concentrix Ltd. · Sentinel + Cortex XSOAR</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>The SOC was drowning in 3,000+ daily alerts — 90% false positives. Analysts were experiencing alert fatigue and missing real incidents hidden in the noise. I needed to rebuild the detection layer from scratch with quality over quantity as the guiding principle.</p></div>
+        <ul class="rwe-points">
+          <li>Built <strong>40+ MITRE ATT&amp;CK mapped detection rules</strong> in Sentinel (KQL) and Cortex XSOAR (XQL) — each rule tied to a specific TTP with documented rationale, test cases, and tuning history.</li>
+          <li>Applied <strong>UEBA baselines</strong> to replace static threshold rules — "login from unusual country" rules now fired relative to each user's 30-day baseline, eliminating 80% of false positives from that category.</li>
+          <li>Built <strong>watchlist-driven suppression logic</strong> — dynamic allow-lists (IT admin IPs, service accounts, maintenance windows) injected into rules via Sentinel Watchlists, context-enriching every alert.</li>
+          <li>Implemented <strong>detection-as-code</strong> — Sentinel analytic rules stored as YAML in Azure DevOps, deployed via pipeline with peer review, version control, and automated rollback on regression.</li>
+          <li>Tuned <strong>Defender ASR rules</strong> in audit mode for 2 weeks, analysed telemetry to identify legitimate business processes blocked, then enforced block mode with targeted exclusions.<span class="rwe-metric">Alert noise ↓75%</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- IR & FORENSICS -->
+    <div class="rwe-panel" id="tab-ir">
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">🚨</div><div><h4>Cloud Incident Response — Compromised Identity &amp; Credential Theft</h4><div class="rwe-context">Devi Technologies &amp; Concentrix · Azure / AWS</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>A Sentinel alert fired for "Impossible Travel" — an engineer's account was authenticating from the UK and Nigeria within 20 minutes. This was an active credential theft incident. I led the response from detection through to root cause and remediation.</p></div>
+        <ul class="rwe-points">
+          <li>Executed <strong>SOAR playbook</strong> (Cortex XSOAR) to instantly revoke all active sessions for the compromised identity, disable the Entra ID account, and quarantine any devices with active sign-ins — all automated within 90 seconds of alert firing.</li>
+          <li>Performed <strong>cloud forensic investigation</strong> using CloudTrail, Entra ID Sign-in Logs, and Defender for Cloud Apps — reconstructed the attacker's actions, identifying lateral movement to 3 additional storage accounts.</li>
+          <li>Used <strong>Magnet AXIOM Cloud</strong> to acquire cloud evidence preserving chain of custody — exported Azure Activity Logs and M365 audit logs as forensic artefacts for the legal team.</li>
+          <li>Delivered full <strong>incident timeline and RCA report</strong> to CISO within 4 hours — including IOCs, affected resources, containment actions, and long-term remediation recommendations.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- IAC -->
+    <div class="rwe-panel" id="tab-iac">
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">📦</div><div><h4>Terraform IaC Security Scanning &amp; Secure-by-Design Deployments</h4><div class="rwe-context">Devi Technologies &amp; Star Compliance · Azure + AWS</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>Infrastructure was being deployed manually or via unreviewed Terraform with no security checks — resulting in publicly exposed storage buckets, unencrypted RDS instances, and security groups with 0.0.0.0/0 rules reaching production. A misconfigured S3 bucket had already caused a data exposure incident.</p></div>
+        <ul class="rwe-points">
+          <li>Integrated <strong>Checkov and KICS</strong> into Azure DevOps and GitHub Actions pipelines — Terraform plans blocked on HIGH/CRITICAL findings before any infrastructure was provisioned.<span class="rwe-metric">Misconfigs ↓40%</span></li>
+          <li>Implemented <strong>Microsoft MSDO (Security DevOps) extension</strong> in Azure DevOps — running Terrascan, Template Analyzer, and Trivy as mandatory pipeline stages surfacing results in Defender for Cloud.</li>
+          <li>Authored <strong>Terraform security modules</strong> for VNet, AKS, Key Vault, and Storage — pre-hardened reusable modules that enforce encryption, private endpoints, and RBAC by default.</li>
+          <li>Applied <strong>Open Policy Agent (OPA) policies</strong> as custom Checkov checks — enforcing organisation-specific standards (e.g. mandatory tags, approved regions, required log settings) beyond built-in rules.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- VULN -->
+    <div class="rwe-panel" id="tab-vuln">
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">🔍</div><div><h4>Automated Vulnerability Management Workflows</h4><div class="rwe-context">Concentrix Ltd. · Defender for Cloud + Snyk + Tenable</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>Vulnerability remediation was entirely manual — a spreadsheet of findings emailed weekly with no SLA tracking, no prioritisation, and no accountability. Critical CVEs were sitting unpatched for 90+ days. I needed to automate the entire lifecycle from discovery through to verified remediation.</p></div>
+        <ul class="rwe-points">
+          <li>Integrated <strong>Defender for Cloud vulnerability assessments</strong> with Azure DevOps work items — every new HIGH/CRITICAL finding auto-creates a tracked ticket assigned to the owning team with SLA dates.</li>
+          <li>Built <strong>Snyk + Tenable integration</strong> into CI/CD — vulnerabilities discovered at build time are correlated with runtime findings, prioritised by exploitability and asset criticality, not just CVSS score.</li>
+          <li>Implemented <strong>automated patching workflows</strong> using Azure Update Manager and AWS Systems Manager Patch Manager — reducing mean time to patch critical CVEs from 90 days to under 14 days.</li>
+          <li>Built <strong>Power BI vulnerability dashboard</strong> for CISO — real-time view of open vulnerabilities by severity, age, team, and environment with SLA breach alerting.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- GOVERNANCE -->
+    <div class="rwe-panel" id="tab-governance">
+      <div class="rwe-card">
+        <div class="rwe-card-header"><div class="rwe-icon">🗺️</div><div><h4>Threat Modelling for Cloud-Native Microservices</h4><div class="rwe-context">Star Compliance Ltd. · Azure Microservices Architecture</div></div></div>
+        <div class="rwe-why"><div class="why-label">Why I needed this</div><p>A new payments microservices platform was 6 weeks from production launch with no security review conducted. The architecture involved 12 services, an API gateway, event bus, and external payment provider integration — a complex attack surface. I was brought in to threat model the entire system before launch.</p></div>
+        <ul class="rwe-points">
+          <li>Facilitated <strong>STRIDE threat modelling workshops</strong> with architects and developers using OWASP Threat Dragon — identified 23 threats across the data flow diagrams, of which 8 were rated HIGH.</li>
+          <li>Documented threats in a structured <strong>threat register</strong> with MITRE ATT&amp;CK mappings, risk ratings, and specific mitigations — accepted by the CISO and tracked in Jira through to closure.</li>
+          <li>Identified a critical <strong>SSRF vulnerability</strong> in the payment webhook handler and an insecure direct object reference in the customer API during the modelling session — both fixed before launch.</li>
+          <li>Established a <strong>recurring threat modelling cadence</strong> — every major feature or architecture change now requires a lightweight STRIDE review as part of the Definition of Done.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- LOG ENGINEERING DEEP DIVE -->
-<section id="log-engineering">
+<section id="log-engineering" style="background:var(--navy2)">
   <div class="container">
     <div class="section-label">Specialist Capability</div>
     <div class="section-title">Log Engineering &amp; Detection Fine-Tuning</div>
     <div class="section-line"></div>
-    <p style="color:#a8b2d8;font-size:.93rem;line-height:1.85;max-width:860px;margin-bottom:2rem">A core part of my detection engineering practice is building the log infrastructure that feeds it — from raw source to actionable, high-fidelity alerts. I own the full pipeline: custom log collection → DCR-based ingestion → normalisation → query optimisation → detection rule tuning.</p>
-
-    <div class="highlight-box">
-      <h4>📥 Custom Log Collection &amp; Data Collection Rules (DCR)</h4>
-      <ul>
-        <li>Designed and deployed <strong>Azure Monitor Data Collection Rules (DCRs)</strong> to ingest custom logs from non-native sources including on-premises servers, custom applications, syslog endpoints, and third-party security appliances into Log Analytics Workspaces.</li>
-        <li>Configured the <strong>Azure Monitor Agent (AMA)</strong> as a replacement for the legacy MMA, managing DCR associations across hybrid endpoints (Azure VMs, Arc-enabled servers, on-prem Linux/Windows).</li>
-        <li>Built custom log ingestion pipelines using the <strong>Logs Ingestion API</strong> and DCR transformations to ingest structured/unstructured data from sources not natively supported by Sentinel connectors.</li>
-        <li>Created <strong>custom tables</strong> in Log Analytics Workspace (Basic and Analytics tiers) and mapped ingestion streams to appropriate retention tiers to optimise cost vs. query performance.</li>
-        <li>Integrated <strong>Windows Event Forwarding (WEF)</strong> and custom XPath queries within DCRs to selectively collect high-value security events, reducing noise at the collection layer.</li>
-      </ul>
-    </div>
-
-    <div class="highlight-box">
-      <h4>🔄 Log Normalisation &amp; ASIM (Advanced SIEM Information Model)</h4>
-      <ul>
-        <li>Implemented <strong>ASIM normalisation schemas</strong> across Sentinel to standardise log formats from heterogeneous sources (firewall, DNS, authentication, network, process events) into a unified query layer.</li>
-        <li>Authored custom <strong>ASIM parsers</strong> using KQL functions to normalise vendor-specific log formats (Cisco ASA, Palo Alto, CrowdStrike, Netskope) into standard ASIM event schemas.</li>
-        <li>Applied <strong>DCR-based transformations</strong> at ingestion time using KQL to parse, filter, and enrich fields before data lands in the workspace — reducing post-ingestion processing overhead.</li>
-        <li>Used <strong>Regex-based log parsing</strong> within Splunk and QRadar to extract structured fields from raw syslog and CEF-formatted data, enabling consistent field mapping across SIEM platforms.</li>
-        <li>Maintained parser versioning and documentation, enabling SOC analysts to query across multi-source data without knowledge of vendor-specific field names.</li>
-      </ul>
-    </div>
-
-    <div class="highlight-box">
-      <h4>⚙️ Log Ingestion Fine-Tuning &amp; Cost Optimisation</h4>
-      <ul>
-        <li>Performed <strong>ingestion volume analysis</strong> using KQL (Usage table, _BilledSize) to identify high-volume, low-value log sources and implemented targeted filtering at the DCR transformation layer to reduce ingestion costs.</li>
-        <li>Configured <strong>event filtering within DCRs</strong> using XPath and KQL stream declarations to drop noisy, non-security-relevant events (e.g., verbose IIS logs, low-risk audit events) before they reach the workspace.</li>
-        <li>Applied <strong>Basic Logs tier</strong> for high-volume, infrequently queried data (e.g., raw network flows, verbose debug logs) and Analytics tier for detection-critical data, achieving significant cost reduction without losing coverage.</li>
-        <li>Implemented <strong>data capping and sampling strategies</strong> on development/test environment log sources to prevent accidental over-ingestion during pipeline testing.</li>
-        <li>Automated ingestion monitoring with KQL-based workbooks and alert rules to flag anomalous ingestion spikes, enabling proactive cost and capacity management.</li>
-      </ul>
-    </div>
-
-    <div class="highlight-box">
-      <h4>🎯 Detection Rule Development &amp; Fine-Tuning</h4>
-      <ul>
-        <li>Built <strong>40+ high-fidelity detection rules</strong> in Microsoft Sentinel (KQL) and Cortex XSOAR (XQL), mapped to MITRE ATT&CK TTPs — covering techniques including credential access, lateral movement, defence evasion, and exfiltration.</li>
-        <li>Performed iterative <strong>false positive analysis</strong> by reviewing alert history, entity behaviour baselines, and environment-specific patterns — refining rule logic using exclusion lists, dynamic thresholds, and conditional filters to improve signal-to-noise ratio.</li>
-        <li>Applied <strong>entity-based analytics and UEBA</strong> (User and Entity Behaviour Analytics) within Sentinel to detect anomalous behaviours that static threshold rules would miss, improving detection of insider threats and compromised accounts.</li>
-        <li>Tuned <strong>ASR (Attack Surface Reduction) rules</strong> in Defender for Endpoint — balancing security posture with operational productivity by analysing audit mode telemetry before enforcing block mode rules.</li>
-        <li>Designed <strong>watchlist-driven detection logic</strong> in Sentinel — using dynamic allow-lists (known admin IPs, service accounts, maintenance windows) to context-enrich alerts and suppress benign positives.</li>
-        <li>Built <strong>detection-as-code</strong> workflows by managing Sentinel analytic rules as YAML/JSON via Azure DevOps pipelines — enabling version control, peer review, and automated deployment of detection content.</li>
-        <li>Created <strong>custom TTP libraries</strong> aligned to MITRE ATT&CK, enabling systematic coverage gap analysis and prioritised rule development roadmaps based on threat intelligence.</li>
-      </ul>
+    <p class="section-intro">I own the full detection pipeline — from raw log source through custom collection, DCR-based ingestion, ASIM normalisation, ingestion cost optimisation, and KQL detection rule fine-tuning.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(480px,1fr));gap:1.1rem">
+      <div class="hbox">
+        <h4>📥 Custom Log Collection &amp; Data Collection Rules (DCR)</h4>
+        <ul>
+          <li>Deployed Azure Monitor DCRs to ingest custom logs from on-premises servers, custom apps, syslog endpoints, and third-party appliances into Log Analytics Workspaces.</li>
+          <li>Configured AMA (replacing legacy MMA) across hybrid endpoints — Azure VMs, Arc-enabled servers, on-prem Linux/Windows — managing DCR associations at scale.</li>
+          <li>Built custom log ingestion pipelines using the Logs Ingestion API and DCR transformations for sources with no native Sentinel connector.</li>
+          <li>Created custom Log Analytics tables (Basic &amp; Analytics tiers) with selective retention policies to balance cost and query performance.</li>
+          <li>Used Windows Event Forwarding (WEF) with custom XPath queries within DCRs to collect only high-value security events, reducing noise at the collection layer.</li>
+        </ul>
+      </div>
+      <div class="hbox">
+        <h4>🔄 Log Normalisation &amp; ASIM Schemas</h4>
+        <ul>
+          <li>Implemented ASIM normalisation across Sentinel — standardising logs from firewalls, DNS, auth, network, and process events into unified query schemas.</li>
+          <li>Authored custom ASIM parsers (KQL functions) for Cisco ASA, Palo Alto, CrowdStrike, and Netskope — enabling cross-source detection without vendor-specific field knowledge.</li>
+          <li>Applied DCR-based transformations at ingestion time to parse, filter, and enrich fields before data lands in the workspace.</li>
+          <li>Used Regex-based log parsing in Splunk and QRadar to extract structured fields from raw syslog and CEF data for consistent field mapping.</li>
+        </ul>
+      </div>
+      <div class="hbox">
+        <h4>⚙️ Ingestion Fine-Tuning &amp; Cost Optimisation</h4>
+        <ul>
+          <li>Performed ingestion volume analysis using KQL (Usage table, _BilledSize) — identified top 5 high-volume, low-value sources accounting for 60% of ingestion costs.</li>
+          <li>Implemented DCR event filtering (XPath + KQL stream declarations) to drop noisy non-security events before they reach the workspace.</li>
+          <li>Routed high-volume raw flows to Basic Logs tier and detection-critical data to Analytics tier — achieving significant cost reduction without coverage loss.</li>
+          <li>Automated ingestion monitoring with KQL workbooks and alert rules flagging anomalous ingestion spikes for proactive cost management.</li>
+        </ul>
+      </div>
+      <div class="hbox">
+        <h4>🎯 Detection Rule Development &amp; Fine-Tuning</h4>
+        <ul>
+          <li>Built 40+ MITRE ATT&amp;CK-mapped detection rules in Sentinel (KQL) and Cortex (XQL) — covering credential access, lateral movement, defence evasion, and exfiltration TTPs.</li>
+          <li>Performed iterative false positive analysis — refined rule logic using exclusion lists, dynamic thresholds, and UEBA baselines to improve signal-to-noise ratio.</li>
+          <li>Designed watchlist-driven detection logic in Sentinel — dynamic allow-lists (admin IPs, service accounts, maintenance windows) to context-enrich and suppress benign alerts.</li>
+          <li>Managed Sentinel analytic rules as YAML/JSON via Azure DevOps — detection-as-code with version control, peer review, and automated deployment.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- GITHUB & AZURE DEVOPS -->
-<section id="devsecops-platforms" style="background:var(--navy2)">
+<section id="devsecops">
   <div class="container">
     <div class="section-label">Platform Expertise</div>
     <div class="section-title">GitHub &amp; Azure DevOps Security</div>
     <div class="section-line"></div>
-    <p style="color:#a8b2d8;font-size:.93rem;line-height:1.85;max-width:860px;margin-bottom:2rem">Deep hands-on experience embedding security natively into developer workflows across both GitHub and Azure DevOps — shifting security left without slowing delivery teams down.</p>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(470px,1fr));gap:1.3rem">
-
-      <div class="highlight-box">
+    <p class="section-intro">Deep hands-on experience embedding security natively into developer workflows across GitHub and Azure DevOps — shifting security left without slowing delivery teams.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(470px,1fr));gap:1.1rem">
+      <div class="hbox">
         <h4>🐙 GitHub Advanced Security (GHAS)</h4>
         <ul>
-          <li>Enabled and managed <strong>GitHub Advanced Security</strong> across enterprise repositories — configuring CodeQL for automated SAST scanning on pull requests with custom query suites targeting high-risk vulnerability classes.</li>
-          <li>Implemented <strong>Secret Scanning</strong> with push protection to prevent accidental commit of API keys, credentials, and tokens, and configured custom secret patterns for internal token formats.</li>
-          <li>Managed <strong>Dependabot alerts and automated PRs</strong> for dependency vulnerability remediation — configured update schedules, grouping rules, and version pinning strategies.</li>
-          <li>Built <strong>GitHub Actions security workflows</strong> integrating Snyk, OWASP ZAP, SonarCloud, and Trivy (container scanning) as mandatory CI gates — blocking merges on high/critical findings.</li>
-          <li>Enforced <strong>branch protection rules</strong>, required status checks, CODEOWNERS reviews, and signed commit policies across critical repositories.</li>
-          <li>Used <strong>GitHub Security Advisories</strong> and the Dependency Graph to maintain visibility into transitive dependencies and exposure to published CVEs.</li>
+          <li>Enabled GHAS across enterprise repositories — configured CodeQL SAST with custom query suites targeting high-risk vulnerability classes.</li>
+          <li>Implemented Secret Scanning with push protection — custom patterns for internal token formats preventing accidental credential commits.</li>
+          <li>Managed Dependabot alerts and automated PRs for dependency vulnerability remediation with grouping rules and version pinning.</li>
+          <li>Built GitHub Actions security workflows integrating Snyk, OWASP ZAP, SonarCloud, and Trivy (container scanning) as mandatory CI gates.</li>
+          <li>Enforced branch protection rules, CODEOWNERS reviews, required status checks, and signed commit policies on critical repositories.</li>
+          <li>Implemented SBOM generation (CycloneDX) and SLSA provenance attestations for artifact integrity across build pipelines.</li>
         </ul>
       </div>
-
-      <div class="highlight-box">
+      <div class="hbox">
         <h4>🔷 Azure DevOps Pipeline Security</h4>
         <ul>
-          <li>Integrated <strong>SAST, DAST, SCA, and IaC scanning</strong> (Terraform/Checkov) as mandatory stages within Azure DevOps CI/CD pipelines — enforcing Quality Gates that block deployment on policy violations.</li>
-          <li>Configured <strong>Microsoft Security DevOps (MSDO) extension</strong> in Azure DevOps to run Bandit, ESLint, Template Analyzer, Terrascan, and Trivy within pipelines, surfacing findings directly in Defender for Cloud.</li>
-          <li>Implemented <strong>pipeline approvals and environment gates</strong> to enforce security sign-off before production deployments, integrating with ITSM and change management workflows.</li>
-          <li>Managed <strong>Azure DevOps service connections and federated identity (Workload Identity Federation)</strong> — eliminating long-lived secrets by replacing service principal client secrets with OIDC-based authentication.</li>
-          <li>Enforced <strong>least-privilege pipeline permissions</strong> — scoping service principal roles to minimum required Azure RBAC, restricting pipeline variable group access, and auditing pipeline run history.</li>
-          <li>Built <strong>detection-as-code pipelines</strong> to version-control and auto-deploy Sentinel analytic rules, SOAR playbooks, and workbooks via Azure DevOps — enabling GitOps-driven SOC operations.</li>
+          <li>Integrated SAST, DAST, SCA, and IaC scanning (Checkov/Terrascan) as mandatory pipeline stages — Quality Gates block deployments on policy violations.</li>
+          <li>Configured Microsoft Security DevOps (MSDO) extension — running Bandit, ESLint, Template Analyzer, Terrascan, and Trivy with findings surfaced in Defender for Cloud.</li>
+          <li>Implemented pipeline approvals and environment gates enforcing security sign-off before production deployments.</li>
+          <li>Eliminated long-lived secrets by replacing service principal client secrets with OIDC-based Workload Identity Federation.</li>
+          <li>Built detection-as-code pipelines to version-control and auto-deploy Sentinel analytic rules, SOAR playbooks, and workbooks — GitOps-driven SOC operations.</li>
         </ul>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- CERTIFICATIONS -->
-<section id="certifications">
+<section id="certifications" style="background:var(--navy2)">
   <div class="container">
     <div class="section-label">Credentials</div>
     <div class="section-title">Certifications</div>
     <div class="section-line"></div>
-
-    <div class="cert-category">☁️ Cloud &amp; Security Engineering</div>
+    <div class="cert-cat">☁️ Cloud &amp; Security Engineering</div>
     <div class="cert-grid">
       <div class="cert-badge"><div class="cert-icon">🔵</div><h4>SC-200</h4><p>Microsoft Security Operations Analyst</p></div>
       <div class="cert-badge"><div class="cert-icon">🔵</div><h4>SC-100</h4><p>Microsoft Cybersecurity Architect</p></div>
@@ -413,14 +715,12 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
       <div class="cert-badge"><div class="cert-icon">🔒</div><h4>CompTIA Sec+</h4><p>Security+</p></div>
       <div class="cert-badge"><div class="cert-icon">🏛️</div><h4>CISM</h4><p>Certified Information Security Manager</p></div>
     </div>
-
-    <div class="cert-category">🌐 Networking &amp; Infrastructure</div>
+    <div class="cert-cat">🌐 Networking &amp; Infrastructure</div>
     <div class="cert-grid">
       <div class="cert-badge"><div class="cert-icon">🔵</div><h4>CCNA</h4><p>Cisco Certified Network Associate</p></div>
       <div class="cert-badge"><div class="cert-icon">🔵</div><h4>CCNP</h4><p>Cisco Certified Network Professional</p></div>
     </div>
-
-    <div class="cert-category">🔬 Incident Response &amp; Digital Forensics</div>
+    <div class="cert-cat">🔬 Incident Response &amp; Digital Forensics</div>
     <div class="cert-grid">
       <div class="cert-badge"><div class="cert-icon">🔬</div><h4>MCCE</h4><p>Magnet Certified Cloud Examiner</p></div>
       <div class="cert-badge"><div class="cert-icon">🔬</div><h4>MCME</h4><p>Magnet Certified macOS Examiner</p></div>
@@ -432,95 +732,82 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" style="background:var(--navy2)">
+<section id="experience">
   <div class="container">
     <div class="section-label">Career History</div>
     <div class="section-title">Work Experience</div>
     <div class="section-line"></div>
     <div class="exp-timeline">
-
       <div class="exp-item">
         <div class="exp-dot"></div>
         <div class="exp-period">Jan 2026 – Present (Contract)</div>
         <div class="exp-role">Sr. Security Engineer</div>
         <div class="exp-company">Devi Technologies Ltd. · UK</div>
         <ul class="exp-bullets">
-          <li>Spearheaded cloud security posture assessment across Azure and AWS, ensuring alignment with CIS Benchmarks (L1 &amp; L2) and industry best practices.</li>
-          <li>Designed and reviewed secure cloud architectures; conducted threat modelling (STRIDE/PASTA) identifying and mitigating high-risk attack vectors before deployment.</li>
-          <li>Integrated SCA, SAST, DAST, and dependency scanning into CI/CD pipelines (Azure DevOps &amp; GitHub Actions) — enabling early detection and remediation.<span class="exp-metric">Infra misconfigs ↓40%</span></li>
-          <li>Implemented Terraform-based IaC scanning using Checkov and MSDO, enforcing secure-by-design infrastructure provisioning across hybrid environments.</li>
-          <li>Configured <strong>Data Collection Rules (DCRs)</strong> and Azure Monitor Agent (AMA) to ingest custom logs from on-premises and cloud workloads into Sentinel Log Analytics Workspaces.</li>
-          <li>Implemented privileged IAM controls — Azure Entra ID, Conditional Access, PIM, RBAC, and AWS Identity Center, SCPs, GuardDuty, and Inspector — reducing unauthorised access risks.</li>
-          <li>Provided cloud-security SME support to Cyber IR teams; performed forensic investigations on compromised cloud workloads and identities.</li>
-          <li>Mentored junior analysts on detection engineering and log collection best practices; served as primary technical responder for complex client security cases.</li>
+          <li>Spearheaded cloud security posture assessment across Azure and AWS, enforcing CIS Benchmarks (L1 &amp; L2); integrated Defender for Cloud CSPM and AWS Security Hub for centralised posture visibility.</li>
+          <li>Designed secure cloud architectures; conducted STRIDE/PASTA threat modelling sessions identifying and mitigating high-risk attack vectors before deployment.</li>
+          <li>Integrated SCA, SAST, DAST, IaC scanning (Checkov) into Azure DevOps and GitHub Actions pipelines — mandatory security gates blocking non-compliant deployments.<span class="exp-metric">Misconfigs ↓40%</span></li>
+          <li>Configured Data Collection Rules (DCRs) and Azure Monitor Agent (AMA) to ingest custom and on-premises logs into Sentinel, extending SOC visibility to previously blind sources.</li>
+          <li>Implemented privileged IAM — Entra ID PIM, Conditional Access, RBAC, AWS Identity Center, SCPs, GuardDuty, and Inspector — eliminating standing privilege across cloud workloads.</li>
+          <li>Provided cloud-security SME support for incident response; performed forensic investigations on compromised cloud identities and workloads.</li>
         </ul>
       </div>
-
       <div class="exp-item">
         <div class="exp-dot"></div>
         <div class="exp-period">Dec 2022 – Dec 2025</div>
         <div class="exp-role">Sr. Security Consultant</div>
         <div class="exp-company">Concentrix Ltd. · UK</div>
         <ul class="exp-bullets">
-          <li>Led end-to-end incident response — triage, containment, and root cause analysis — significantly reducing MTTD and MTTR across enterprise environments.</li>
-          <li>Designed and implemented <strong>40+ high-fidelity detection use cases</strong> in Sentinel (KQL) and Cortex XSOAR (XQL), mapped to MITRE ATT&amp;CK TTPs covering credential access, lateral movement, and exfiltration.<span class="exp-metric">40+ use cases</span></li>
-          <li>Authored <strong>custom ASIM parsers</strong> to normalise heterogeneous log sources (Cisco, Palo Alto, CrowdStrike, Netskope) into unified Sentinel schemas, enabling cross-source detection without vendor-specific query knowledge.</li>
-          <li>Fine-tuned detection rules through iterative false positive analysis — applying dynamic thresholds, watchlist-driven exclusions, and UEBA baselines to improve alert fidelity.<span class="exp-metric">Vulns ↓65%</span></li>
-          <li>Optimised log ingestion costs by analysing Usage table data (KQL), implementing DCR-based event filtering and Basic Logs tier routing for high-volume, low-value data streams.</li>
-          <li>Integrated GHAS (CodeQL, Secret Scanning, Dependabot) and Azure DevOps MSDO into CI/CD pipelines — reducing security vulnerabilities by 65% through automated SCA/SAST/DAST tooling.</li>
-          <li>Built detection-as-code workflows — managing Sentinel analytic rules as YAML via Azure DevOps pipelines with version control, peer review, and automated deployment.</li>
-          <li>Secured containerised workloads — image scanning, runtime protection, and Kubernetes admission controls preventing non-compliant workload deployments.</li>
+          <li>Led end-to-end incident response (triage, containment, RCA) — significantly reducing MTTD and MTTR; developed automated SOAR playbooks for credential theft and impossible travel scenarios.</li>
+          <li>Designed and deployed <strong>40+ MITRE ATT&amp;CK-mapped detection rules</strong> in Sentinel (KQL) and Cortex XSOAR (XQL); authored ASIM parsers and implemented UEBA-based fine-tuning to reduce alert noise by 75%.<span class="exp-metric">40+ rules</span></li>
+          <li>Reduced security vulnerabilities by <strong>65%</strong> by integrating GHAS (CodeQL, Secret Scanning, Dependabot), Snyk, SonarCloud, and Trivy into CI/CD pipelines; implemented SBOM generation and SLSA provenance.<span class="exp-metric">Vulns ↓65%</span></li>
+          <li>Optimised log ingestion costs through DCR-based event filtering and Basic/Analytics tier routing — eliminating 60% of high-volume, low-value ingestion; built KQL workbooks for ingestion monitoring.</li>
+          <li>Secured containerised workloads — K8s admission controls, image scanning, runtime protection (Defender for Containers), and CIS Benchmark hardening across AKS and EKS clusters.</li>
+          <li>Built detection-as-code pipeline — Sentinel rules managed as YAML in Azure DevOps with version control, peer review, and automated deployment.</li>
         </ul>
       </div>
-
       <div class="exp-item">
         <div class="exp-dot"></div>
         <div class="exp-period">Jun 2021 – Nov 2022</div>
         <div class="exp-role">Senior Security Engineer</div>
         <div class="exp-company">Star Compliance Ltd. · UK</div>
         <ul class="exp-bullets">
-          <li>Led security engineering for internal and external threat response; improved detection maturity and response effectiveness across cloud and on-premises environments.</li>
-          <li>Configured custom log collection pipelines using Windows Event Forwarding (WEF) and syslog forwarding into Log Analytics Workspaces via DCRs, extending Sentinel coverage to non-native sources.</li>
-          <li>Developed automated SOAR playbooks to instantly isolate compromised cloud VMs and revoke Entra ID/AAD sessions on detection of impossible travel or credential theft incidents.</li>
-          <li>Embedded security controls into Azure DevOps CI/CD pipelines — automated vulnerability scanning using Defender for Cloud, Terraform IaC scanning, and Quality Gate enforcement.</li>
-          <li>Coached engineering teams on threat modelling (STRIDE/PASTA), secure coding, and SonarQube Quality Gate integration — enabling secure-by-design development practices.</li>
-          <li>Supported ISO 27001 and SOC 2 Type II compliance through control documentation, audit preparation, and evidence collection.</li>
+          <li>Led threat modelling (STRIDE/PASTA) for cloud-native payments microservices — identified 8 HIGH threats before production launch; established recurring threat modelling cadence within SDLC.</li>
+          <li>Configured custom log collection pipelines (WEF, syslog DCRs) into Sentinel; developed automated SOAR playbooks for instant VM quarantine and Entra ID session revocation.</li>
+          <li>Embedded security into Azure DevOps CI/CD — Terraform IaC scanning, Defender for Cloud integration, Quality Gate enforcement; replaced service principal secrets with Workload Identity Federation.</li>
+          <li>Coached engineering teams on STRIDE/PASTA threat modelling, secure coding, and SonarQube Quality Gate integration — enabling secure-by-design development culture.</li>
+          <li>Supported ISO 27001 and SOC 2 Type II compliance — control documentation, audit preparation, and evidence collection.</li>
         </ul>
       </div>
-
       <div class="exp-item">
         <div class="exp-dot"></div>
         <div class="exp-period">Sep 2019 – May 2021</div>
         <div class="exp-role">Security Engineer</div>
         <div class="exp-company">Devi Techs Inc.</div>
         <ul class="exp-bullets">
-          <li>Defined and enforced secure configuration baselines across AWS services (EC2, S3, RDS, Lambda) using AWS Config and policy-as-code.</li>
-          <li>Built custom KQL-based detection rules to identify authentication anomalies and insider threats; created MITRE ATT&amp;CK-aligned TTP libraries to standardise detection engineering practices.</li>
-          <li>Implemented network segmentation using VPC design, subnet isolation, security groups, and NACLs to minimise lateral movement and reduce attack surface.</li>
-          <li>Designed and deployed zero-trust access controls — fine-grained IAM policies, MFA, device and location-based conditional access, and automated credential rotation.</li>
-          <li>Built automated guardrails using SCPs and IAM permission boundaries to prevent insecure resource provisioning across AWS accounts.</li>
+          <li>Enforced secure configuration baselines across AWS (EC2, S3, RDS, Lambda) using AWS Config and policy-as-code; implemented VPC segmentation with private subnet isolation and NACLs.</li>
+          <li>Built custom KQL detection rules for authentication anomalies and insider threats; created MITRE ATT&amp;CK-aligned TTP libraries to standardise detection engineering practices.</li>
+          <li>Designed zero-trust access controls — fine-grained IAM, MFA, device/location conditional access, automated credential rotation, and SCPs preventing insecure resource provisioning.</li>
+          <li>Secured sensitive data using AWS KMS encryption at rest and in transit with strict key management and rotation policies.</li>
         </ul>
       </div>
-
       <div class="exp-item">
         <div class="exp-dot"></div>
         <div class="exp-period">Nov 2014 – Sep 2019</div>
         <div class="exp-role">Security Engineer</div>
         <div class="exp-company">Tech Mahindra Ltd. · Multiple Clients</div>
         <ul class="exp-bullets">
-          <li>Designed and implemented hub-and-spoke network architectures in Microsoft Azure using Azure VPN Gateway, centralising connectivity, security controls, and routing across multiple spoke VNets.</li>
-          <li>Integrated Azure Firewall / NVA (Cisco ASA, Palo Alto) within the hub to inspect and control cross-spoke and on-premises traffic, reducing lateral movement risk.</li>
-          <li>Enforced network security controls using NSGs and UDRs within hub-and-spoke topology — ensuring least-privilege network access and consistent policy enforcement.</li>
-          <li>Received the <strong>Amazing Talent Award</strong> (Outstanding Employee of the Year 2017) and <strong>Bravo Award</strong> (2018).</li>
+          <li>Designed hub-and-spoke Azure network architectures using VPN Gateway, Azure Firewall/NVA (Cisco ASA, Palo Alto), enforcing centralised traffic inspection and segmentation.</li>
+          <li>Implemented VNet peering, NSGs, UDRs, and route propagation across hub-and-spoke topology — enforcing least-privilege network access across application tiers.</li>
+          <li>Received <strong>Amazing Talent Award</strong> (Outstanding Employee of the Year 2017) and <strong>Bravo Award</strong> (2018) from Tech Mahindra.</li>
         </ul>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- EDUCATION -->
-<section id="education">
+<section id="education" style="background:var(--navy2)">
   <div class="container">
     <div class="section-label">Academic Background</div>
     <div class="section-title">Education</div>
@@ -530,7 +817,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
         <div class="edu-degree">MSc Computer Networking &amp; Cyber Security</div>
         <div class="edu-school">London Metropolitan University, UK</div>
         <div class="edu-info">Network Security (CCNP Sec), Routing &amp; Switching, Digital Forensics, Information Security Auditing, Pen Testing, Cybersecurity</div>
-        <span class="edu-grade">🏅 Graduated with Distinction — Grade 1 (A/Excellent)</span>
+        <span class="edu-grade">🏅 Distinction — Grade 1 (A/Excellent)</span>
       </div>
       <div class="edu-card">
         <div class="edu-degree">B.Tech Electronics &amp; Telecommunication Engineering</div>
@@ -549,24 +836,24 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 </section>
 
 <!-- ACHIEVEMENTS -->
-<section id="achievements" style="background:var(--navy2)">
+<section id="achievements">
   <div class="container">
     <div class="section-label">Recognition</div>
     <div class="section-title">Achievements &amp; Awards</div>
     <div class="section-line"></div>
     <div class="ach-grid">
       <div class="ach-card"><div class="ach-icon">🏆</div><p><strong>Amazing Talent Award</strong> — Outstanding Employee of the Year 2017, Tech Mahindra Ltd.</p></div>
-      <div class="ach-card"><div class="ach-icon">⭐</div><p>Nominated for <strong>Best Employee of the Year</strong>, 2017.</p></div>
+      <div class="ach-card"><div class="ach-icon">⭐</div><p>Nominated for <strong>Best Employee of the Year</strong>, 2017, Tech Mahindra.</p></div>
       <div class="ach-card"><div class="ach-icon">🥇</div><p><strong>Bravo Award</strong> from Tech Mahindra, 2018.</p></div>
-      <div class="ach-card"><div class="ach-icon">🥋</div><p>National Level Certificate from the Kickboxing Association (WAKO), 2016.</p></div>
-      <div class="ach-card"><div class="ach-icon">🥋</div><p>State Level Referee Certificate from World Association Kickboxing Organization, 2016.</p></div>
-      <div class="ach-card"><div class="ach-icon">🏅</div><p>Multiple State and National level <strong>Gold Medals</strong> in kickboxing tournaments (2006–2015).</p></div>
+      <div class="ach-card"><div class="ach-icon">🥋</div><p>National Level Certificate from Kickboxing Association (WAKO), 2016.</p></div>
+      <div class="ach-card"><div class="ach-icon">🥋</div><p>State Level Referee Certificate, World Association Kickboxing Organization, 2016.</p></div>
+      <div class="ach-card"><div class="ach-icon">🏅</div><p>Multiple State &amp; National level <strong>Gold Medals</strong> in kickboxing tournaments (2006–2015).</p></div>
     </div>
   </div>
 </section>
 
 <!-- RESEARCH -->
-<section id="research">
+<section id="research" style="background:var(--navy2)">
   <div class="container">
     <div class="section-label">Academic Contribution</div>
     <div class="section-title">Research &amp; Publication</div>
@@ -574,7 +861,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
     <div class="pub-card">
       <div class="pub-label">📄 Scopus Indexed Publication</div>
       <div class="pub-title">Enhanced ECG Signal Classification Using Hybrid CNN-Transformer Models with Tuning Techniques and Genetic Algorithm Optimization</div>
-      <p style="color:#a8b2d8;font-size:.87rem;line-height:1.75">Peer-reviewed research published in a Scopus-indexed journal, combining advanced machine learning architectures (CNN-Transformer hybrid models with Genetic Algorithm optimisation) to improve medical diagnostic accuracy in ECG signal classification.</p>
+      <p style="color:#a8b2d8;font-size:.86rem;line-height:1.75">Peer-reviewed Scopus-indexed research combining CNN-Transformer hybrid architectures with Genetic Algorithm optimisation to improve medical diagnostic accuracy in ECG signal classification.</p>
       <div class="pub-links">
         <a href="http://www.scopus.com/inward/record.url?eid=2-s2.0-85210133853&partnerID=MN8TOARS" class="pub-link" target="_blank">View on Scopus</a>
         <a href="https://orcid.org/0009-0005-7983-7253" class="pub-link" target="_blank">ORCiD Profile</a>
@@ -584,7 +871,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 </section>
 
 <!-- CONTACT -->
-<section id="contact" style="background:var(--navy2)">
+<section id="contact">
   <div class="container">
     <div class="section-label">Let's Connect</div>
     <div class="section-title">Contact</div>
@@ -594,19 +881,11 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
         <div class="contact-item"><div class="c-icon">📧</div><div><div class="c-lbl">Email</div><div class="c-val">Shra1avula@gmail.com</div></div></div>
         <div class="contact-item"><div class="c-icon">📞</div><div><div class="c-lbl">Mobile</div><div class="c-val">+44 7878 867698</div></div></div>
         <div class="contact-item"><div class="c-icon">📍</div><div><div class="c-lbl">Location</div><div class="c-val">Kettering, England, UK</div></div></div>
-        <div class="contact-item">
-          <a href="https://www.linkedin.com/in/shravan-kumar-yadav-684559170/" style="display:flex;align-items:center;gap:1rem;width:100%">
-            <div class="c-icon">💼</div><div><div class="c-lbl">LinkedIn</div><div class="c-val">shravan-kumar-yadav</div></div>
-          </a>
-        </div>
-        <div class="contact-item">
-          <a href="https://www.youtube.com/channel/UCH8dJWHivSYKC3v0r9bdyiA" style="display:flex;align-items:center;gap:1rem;width:100%">
-            <div class="c-icon">▶️</div><div><div class="c-lbl">YouTube</div><div class="c-val">Shravan's Cybrary</div></div>
-          </a>
-        </div>
+        <div class="contact-item"><a href="https://www.linkedin.com/in/shravan-kumar-yadav-684559170/" style="display:flex;align-items:center;gap:.9rem;width:100%"><div class="c-icon">💼</div><div><div class="c-lbl">LinkedIn</div><div class="c-val">shravan-kumar-yadav</div></div></a></div>
+        <div class="contact-item"><a href="https://www.youtube.com/channel/UCH8dJWHivSYKC3v0r9bdyiA" style="display:flex;align-items:center;gap:.9rem;width:100%"><div class="c-icon">▶️</div><div><div class="c-lbl">YouTube</div><div class="c-val">Shravan's Cybrary</div></div></a></div>
       </div>
       <div style="display:flex;flex-direction:column;justify-content:center">
-        <p style="color:#a8b2d8;line-height:1.85;margin-bottom:1.5rem;font-size:.93rem">Open to senior cloud security, DevSecOps, detection engineering, and incident response roles. With 10+ years of hands-on experience across Azure, AWS, GitHub, log engineering, and digital forensics — I bring deep technical expertise and measurable impact to any security team. Eligible for SC Clearance.</p>
+        <p style="color:#a8b2d8;line-height:1.85;margin-bottom:1.4rem;font-size:.91rem">Open to senior cloud security, DevSecOps, detection engineering, and incident response roles. 10+ years of hands-on experience across Azure, AWS, GitHub, Kubernetes, log engineering, and digital forensics. Eligible for SC Clearance.</p>
         <a href="mailto:Shra1avula@gmail.com" class="btn" style="display:inline-block;text-align:center;max-width:200px">Send a Message</a>
       </div>
     </div>
@@ -614,9 +893,17 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 </section>
 
 <footer>
-  <p>© 2025 Shravan Kumar Avula · Sr. Security Engineer · Cloud Security | DevSecOps | Detection Engineering | Incident Response · UK</p>
-  <p style="margin-top:.5rem;font-size:.75rem;color:#444">Eligible for SC Clearance · Shra1avula@gmail.com · +44 7878 867698</p>
+  <p>© 2025 Shravan Kumar Avula · Sr. Security Engineer · Cloud Security | DevSecOps | Detection Engineering | IAM | Incident Response · UK</p>
+  <p style="margin-top:.45rem;font-size:.72rem;color:#444">Eligible for SC Clearance · Shra1avula@gmail.com · +44 7878 867698</p>
 </footer>
 
+<script>
+function showTab(id){
+  document.querySelectorAll('.rwe-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.rwe-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
 </body>
 </html>
